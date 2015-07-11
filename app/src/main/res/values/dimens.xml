@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preference_group_height">30dp</dimen>
+    <dimen name="about_head_size">45dp</dimen>
+
+    <dimen name="main_bottom_layout_height">170dp</dimen>
+    <dimen name="main_bottom_view_height">100dp</dimen>
+    <dimen name="statu_bar_height">15dp</dimen>
+
+    <dimen name="set_icon_size">36dp</dimen>
+    <dimen name="set_goto_size">26dp</dimen>
+    <dimen name="set_item_height">40dp</dimen>
+
+    <dimen name="report_name_width">100dp</dimen>
+    <dimen name="report_footer_height">60dp</dimen>
+    <dimen name="report_head_height">50dp</dimen>
+    <dimen name="report_item_width">120dp</dimen>
+    <dimen name="report_item_icon">50dp</dimen>
+</resources>

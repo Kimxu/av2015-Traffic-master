@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/date"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/head_icon"
+        android:layout_below="@id/date"
+        android:layout_width="@dimen/report_item_icon"
+        android:layout_height="@dimen/report_item_icon"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_below="@id/head_icon"
+        android:id="@+id/line_head"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_light"/>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/head_icon"
+        android:background="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:layout_width="@dimen/report_item_icon"
+        android:layout_height="@dimen/report_item_icon"
+        android:gravity="center"
+        android:text="@string/total"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/line_foot"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/report_footer_height"
+        android:background="@android:color/holo_blue_light"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line_foot"
+        android:layout_below="@id/line_head"
+        android:scrollbars="none">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/date"
+        android:layout_toRightOf="@id/head_icon"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/receive"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/report_head_height"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_rx"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/report_footer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="0"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/report_head_height"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/report_footer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="0"/>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/report_head_height"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/traffic"/>
+
+            <TextView
+                android:id="@+id/total_traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/report_footer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="0"/>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/head_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/head"
+        android:background="@android:color/holo_blue_light"/>
+</RelativeLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_fore">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_fore"
+        android:gravity="center"
+        android:text="设置"
+        android:textSize="23sp"/>
+
+    <ImageView
+        android:src="@drawable/back_but"
+        android:onClick="onBack"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/title"
+        android:padding="10dp"
+        android:layout_alignBottom="@id/title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="@color/main_bg">
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/set_view_corner"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/traffic_set"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/set_icon_size"
+                    android:layout_height="@dimen/set_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/traffic_set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="套餐设置"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/set_goto_size"
+                    android:layout_height="@dimen/set_goto_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/goto_icon"/>
+            </RelativeLayout>
+
+            ·<RelativeLayout
+                android:id="@+id/change_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/set_icon_size"
+                    android:layout_height="@dimen/set_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/change_time_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="套餐日期"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/set_goto_size"
+                    android:layout_height="@dimen/set_goto_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/goto_icon"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/change_collect_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/set_icon_size"
+                    android:layout_height="@dimen/set_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/change_circle_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="采集频率"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/set_goto_size"
+                    android:layout_height="@dimen/set_goto_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/goto_icon"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/traffic_alert"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/set_icon_size"
+                    android:layout_height="@dimen/set_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/alert_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="流量超额提醒"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/set_goto_size"
+                    android:layout_height="@dimen/set_goto_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/goto_icon"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/set_view_corner"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/set_icon_size"
+                    android:layout_height="@dimen/set_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chart"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="月流量曲线图"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/set_goto_size"
+                    android:layout_height="@dimen/set_goto_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/goto_icon"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/day_report"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/set_icon_size"
+                    android:layout_height="@dimen/set_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/day_report"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="日报表"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/set_goto_size"
+                    android:layout_height="@dimen/set_goto_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/goto_icon"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/month_report"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/set_icon_size"
+                    android:layout_height="@dimen/set_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/month_report"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="月报表"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/set_goto_size"
+                    android:layout_height="@dimen/set_goto_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/goto_icon"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_item_height"
+                android:onClick="onClick"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/set_icon_size"
+                    android:layout_height="@dimen/set_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/about"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="关于"
+                    android:textSize="20sp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/set_goto_size"
+                    android:layout_height="@dimen/set_goto_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/goto_icon"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

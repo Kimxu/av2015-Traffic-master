@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onSet">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/menubutton"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/cat"/>
+
+            <TextView
+                android:id="@+id/month_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0%"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/percent_statue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/month_percent"
+                android:layout_centerInParent="true"
+                android:text="已用"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="26sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/divider"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/divider"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/main_fore"
+                    android:gravity="center"
+                    android:text="今日已用流量"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/today_traffic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/main_fore"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="3dp"
+                    android:text="0M"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/main_fore"
+                    android:gravity="center"
+                    android:text="每月流量包"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/data_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/main_fore"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="0M"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/divider"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/main_fore"
+                    android:gravity="center"
+                    android:text="本月已用流量"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/month_traffic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/main_fore"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="0M"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/main_fore"
+                    android:gravity="center"
+                    android:text="距结算日天数"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/balance_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/main_fore"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="0天"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/welcome_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

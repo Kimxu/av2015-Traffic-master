@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">流量猫</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="about_traffic">流量相关</string>
+    <string name="data_plan">流量套餐</string>
+    <string name="alert_traffic">警戒值</string>
+    <string name="start_day">每月起始日期</string>
+    <string name="okay">确定</string>
+    <string name="effective_one_month">仅本月有效</string>
+    <string name="collect_frequency">采集频率</string>
+    <string name="day_report">日报表</string>
+    <string name="month_report">月报表</string>
+    <string name="chose_month">选择月份</string>
+    <string name="send">发送</string>
+    <string name="receive">接收</string>
+    <string name="traffic">流量</string>
+    <string name="total">统计</string>
+    <string name="chose_date">选择日期</string>
+    <string name="unset_data_plan">未设置套餐</string>
+    <string name="alert_traffic_use">请注意流量使用情况</string>
+    <string name="already_close_traffic">已经关闭流量</string>
+    <string name="month_traffic_overflow">本月流量已超出使用限制</string>
+    <string name="data_plan_overflow">本月流量已超出套餐流量</string>
+    <string name="day_traffic_overflow">本日流量已超出使用限制</string>
+    <string name="feature_1">1.实时监控流量</string>
+    <string name="feature_2">2.获取流量周报表，月报表</string>
+    <string name="feature_3">3.警示用户流量使用情况</string>
+    <string name="about_us_team">湖北省武汉市华中科技大学软件学院</string>
+    <string name="about_us_phone">phone:12345678908</string>
+    <string name="about_us_address">add:华中科技大学韵苑公寓</string>
+    <string name="about_us_qq">qq:1234567890</string>
+    <string name="about_us">我们的团队</string>
+
+</resources>
